@@ -13,7 +13,7 @@ public class uts {
 
     public static int[] bobotMaxLantai1 = new int[]{450};
     public static int[] bobotMaxLantai2 = new int[]{250};
-    public static int[] bobotMaxLantai3 = new int[]]{150};
+    public static int[] bobotMaxLantai3 = new int[]{150};
 
     public static void PrintInfokendaraan(){
         int totalLantai1 = 0;
