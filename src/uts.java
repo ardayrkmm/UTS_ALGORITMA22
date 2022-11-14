@@ -58,7 +58,7 @@ public class uts {
         totalSisaKuota = totalJumlahKendaraan - totalLantai1 - totalLantai2 - totalLantai3;
         totalSisaKoutaBobot = TotalBobotTotalMax - totalBebanLantai1 - totalBebanLantai2 - totalBebanLantai3;
         System.out.println("Total Kendaraan lantai 1 : " + totalLantai1 + " | total Kendaraan Lantai 2 : " + totalLantai2 + " | total Kendaraan Lantai 3 : "+ totalLantai3);
-        System.out.println("jumlah Kapasitas : " + TotalBobotTotalMax  + " | total kouta kendaraan : " + totalSisaKoutaBobot);
+        System.out.println("jumlah Kapasitas beban : " + TotalBobotTotalMax  + " | total kouta beban : " + totalSisaKoutaBobot);
         System.out.println("jumlah kapasitas : " + totalJumlahKendaraan + " | total Kendaraan : " + totalSisaKuota);
         System.out.println("-----------------------------------------------------");
 
@@ -141,7 +141,7 @@ public class uts {
                 Random hasilRandom = new Random();
                 int JenisRandom = hasilRandom.nextInt(3)+1;
                 simpanKendaraan(JenisRandom,platNomor);
-                int JenisRandom2 = hasilRandom.nextInt(3)-1;
+                int JenisRandom2 = hasilRandom.nextInt(4)+1;
                 SimpanBobot(JenisRandom2, Integer.parseInt(bobotMobil));
             }
         }
