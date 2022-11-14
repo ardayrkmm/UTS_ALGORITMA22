@@ -11,9 +11,9 @@ public class uts {
     public static String[] Lantai3 = new String[149];
 
 
-    public static int[] bobotMaxLantai1 = new int[450];
-    public static int[] bobotMaxLantai2 = new int[250];
-    public static int[] bobotMaxLantai3 = new int[150];
+    public static int[] bobotMaxLantai1 = new int[]{450};
+    public static int[] bobotMaxLantai2 = new int[]{250};
+    public static int[] bobotMaxLantai3 = new int[]{150};
 
     public static void PrintInfokendaraan(){
         int totalLantai1 = 0;
@@ -141,7 +141,7 @@ public class uts {
                 Random hasilRandom = new Random();
                 int JenisRandom = hasilRandom.nextInt(3)+1;
                 simpanKendaraan(JenisRandom,platNomor);
-                int JenisRandom2 = hasilRandom.nextInt(4)+1;
+                int JenisRandom2 = hasilRandom.nextInt(4)-1;
                 SimpanBobot(JenisRandom2, Integer.parseInt(bobotMobil));
             }
         }
